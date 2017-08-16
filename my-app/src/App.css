@@ -1,0 +1,131 @@
+
+input {
+    font-size: 150%;
+    border: 1px solid #e0e0e0;
+    width: 25%;
+    width: 30px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 30px;
+    letter-spacing: 0.2rem;
+}
+
+input {
+    -moz-box-shadow: inset 0 0 20px rgba(0,0,0,.2);
+    -webkit-box-shadow: inset 0 0 20px rgba(0,0,0,.2);
+    box-shadow: inset 0 0 20px rgba(0,0,0,.2);
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #e0e0e0;
+    width: 200px;
+    text-align: center;
+    outline: 0;
+    font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+  font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.Show-sec {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.Timer-button {
+	position: relative;
+	width: 110px;
+	height: 60px;
+	outline: 0;
+	border: 0;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+    font-size: 20px;
+    font-weight: normal;
+    margin-right: 20px;
+    padding: 20px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    text-align: center;
+    font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+
+}
+
+#time {
+    font-size: 42px;
+    padding: 10px;
+}
+
+#start {
+	background: #4897F0;
+}
+
+#start:hover:enabled {
+	background: #4087d8;
+    box-shadow:0px 2px 10px 5px #97B1BF;
+}
+
+#restart {
+	background: #00CE9B;
+}
+
+#restart:hover {
+	background: #00b98b;
+    box-shadow:0px 2px 10px 5px #97B1BF;
+}
+
+#start:active, #restart:active {
+	top: 1px;
+}
+
+
+.Timer-button:after {
+    content: "";
+    background: #f5f5f5;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.Timer-button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+#start:disabled {
+    background-color: #b2b2b2;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
