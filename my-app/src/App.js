@@ -21,9 +21,6 @@ class App extends Component {
         this.setState({
             currentSec: second
         });
-        if (second === 0) {
-            clearInterval(this.interval);
-        }
         if (second < 1) {
             clearInterval(this.interval);
         }
